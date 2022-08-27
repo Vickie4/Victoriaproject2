@@ -4,12 +4,24 @@ padding: 0;
 margin: 0;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+  padding: 0px;
+  margin: 0px;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
 
 .navbar .container{
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px;
-  background-color: #54BAB9;
+  padding: 7px 60px;
+  background-color: teal;
+  height: 56px;
 }
 
 a{
@@ -22,16 +34,23 @@ a{
   font-size: 28px;
 }
 
-.nav-link{
+.nav-link {
   width: 400px;
   display: flex;
   justify-content: space-between;
   font-size: 18px;
   padding: 4px;
+  
+}
+.icon{
+  display: none;
 }
 
 .bio {
   text-align: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .avatar {
@@ -40,10 +59,11 @@ a{
   height: 230px;
   object-fit: cover;
   margin: 70px 50px 0 50px; 
+  position: static;
 }
 
 h1 {
-  color: #319DA0;
+  color: teal;
   font-size: 40px;
   margin: 20px 0 0 0;
 }
@@ -64,7 +84,7 @@ padding: 4px 0 0 8px;
 .information {
   display: flex;
   justify-content: space-between;
-  background-color: #00838f;
+  background-color: teal;
   margin: 30px 0 30px 0;
   color: #ffffff;
 
@@ -112,7 +132,7 @@ padding: 4px 0 0 8px;
 
 .serv {
 margin: 50px 0 50px 100px;
-color: #319DA0;
+color: teal;
 font-size: 2em;
 }
 
@@ -168,7 +188,7 @@ font-size: 2em;
 }
 
 .ending .end {
-  background-color: #00838f;
+  background-color: teal;
   color: #ffffff;
   text-align: center;
   height: 300px;
@@ -200,7 +220,7 @@ font-size: 2em;
   font-size: 8px;
   padding: 1px;
   background: #1CD6CE; 
-  color: #00838f; 
+  color: teal; 
   margin-right: 20px; 
 }
 
@@ -210,7 +230,7 @@ font-size: 2em;
   padding-left: 1px;
   padding-right: 1px;
   background: #1CD6CE; 
-  color: #00838f;  
+  color: teal;  
   margin-right: 20px;
 }
 
@@ -220,7 +240,7 @@ font-size: 2em;
   padding: 3px;
   font-size: 8px;
   background: #1CD6CE; 
-  color: #00838f;
+  color: teal;
   margin-right: 20px;  
 }
 
@@ -232,3 +252,135 @@ font-size: 2em;
   padding-top: 50px;
   font-size: 14px;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-link a{
+    display: none;
+  }
+  .container a.icon {
+    float: left;
+    display: block;
+  }
+  .container {
+    width:100%;
+  }
+
+  .nav-link{
+    width: 0;
+  }
+  .avatar {
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  .information {
+    display: block;
+    text-align: center;
+    
+  }
+  .information .first {
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .information .sec{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .information .sec h3 {
+    font-size: large;
+    width: 100%;
+  }
+  .information .sec .bottom{
+    padding-bottom: 30px;
+  }
+  
+  .ending .end{
+    width: 100%;
+  }
+  .ending .end h2{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+   #bioinfo {
+    margin: 0;
+   }
+   .serv{
+    width: 100%;
+    margin: 0 0 0 10px;
+    font-size: 20px;
+  }
+  .services{
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .services .box1 {
+    width: 260px;
+    margin: 30px 0px 30px 30px;
+    background-color: #576F72;
+    border-radius: 10px;
+  }
+  .services .box1 p {
+  text-align: center;
+  padding: 0 15px 15px 15px;
+  margin: 0;
+  }
+  .services .box1 h3 {
+    text-align: center;
+    padding: 20px 0 10px 0;
+    margin: 0;
+  }
+  .this{
+    height: fit-content;
+  }
+  .services .box2 {
+    width: 260px;
+    margin: 30px 0px 30px 30px;
+    background-color: #576F72;
+    border-radius: 10px;
+  }
+  .services .box2 p {
+    text-align: center;
+    padding: 0 15px 15px 15px;
+    margin: 0;
+  }
+  .services .box2 h3{
+    text-align: center;
+    padding: 20px 0 10px 0;
+    margin: 0;
+  }
+  .services .box3 {
+    width: 260px;
+    margin: 30px 0px 30px 30px;
+    background-color: #576F72;
+    border-radius: 10px;
+  }
+  .services .box3 p {
+    text-align: center;
+    padding: 0 15px 15px 15px;
+    margin: 0;
+  }
+  .services .box3 h3{
+    text-align: center;
+    padding: 20px 0 10px 0;
+    margin: 0;
+  }
+}
+  
+
+
+/* height: 56px;
+    background: #F9FAFA 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 100; */
