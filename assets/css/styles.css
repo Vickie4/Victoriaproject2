@@ -29,6 +29,9 @@ a{
   text-decoration: dotted;
   font-weight: bold;
 }
+a:hover{
+  opacity: 0.5;
+}
 
 .home{
   font-size: 28px;
@@ -210,10 +213,11 @@ font-size: 2em;
   text-decoration: none;
   margin: 5px 2px;
   border:#ffffff;
+  font-size: 0;
 }
 
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .fa-linkedin {
@@ -221,7 +225,8 @@ font-size: 2em;
   padding: 1px;
   background: #1CD6CE; 
   color: teal; 
-  margin-right: 20px; 
+  margin-right: 20px;
+  border-radius: 2px; 
 }
 
 .fa-facebook {
@@ -232,20 +237,25 @@ font-size: 2em;
   background: #1CD6CE; 
   color: teal;  
   margin-right: 20px;
+  border-radius: 2px;
 }
 
 .fa-twitter {
-  width: 19.5px;
+  width: 18px;
+  height: 19.5px;
   font-size: 6px;
-  padding: 3px;
+  padding: 3px 3px 1px 3px;
   font-size: 8px;
   background: #1CD6CE; 
   color: teal;
-  margin-right: 20px;  
+  margin-right: 15px;
+  border-radius: 2px;  
 }
 
 .fa-instagram {
-  color: #1CD6CE;  
+  color: #1CD6CE;
+  margin: 0;
+  padding-bottom: 4px;  
 } 
 
 .ending .end p {
